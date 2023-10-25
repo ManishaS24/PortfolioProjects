@@ -144,3 +144,9 @@ DELETE
 FROM RowNumCTE
 WHERE row_num > 1
 --ORDER BY PropertyAddress
+
+---------------------------------------------------------------------------------------------------------
+----- DELETE Unused columns
+
+ALTER TABLE PortfolioProjects..NashvilleHousing
+DROP COLUMN PropertyAddress, OwnerAddress, SaleDate, TaxDistrict
